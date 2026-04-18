@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>From Branch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ======== NAVBAR ======== -->
+<header class="header" id="header">
+  <nav class="top-nav">
+    <h1 id="site-title">ᖴᖇOᗰ ᗷᖇᗩᑎᑕᕼ</h1>
+    <p class="tagline">Farm Fresh · Naturally Yours</p>
+  </nav>
+
+  <nav class="menu-nav">
+    <a href="#home" class="nav-link"><button class="nav-btn active">Home</button></a>
+    <a href="#categories" class="nav-link"><button class="nav-btn">Categories</button></a>
+    <a href="#gallery" class="nav-link"><button class="nav-btn">Gallery</button></a>
+    <a href="#about" class="nav-link"><button class="nav-btn">About Us</button></a>
+    <a href="#shop-section" class="nav-link"><button class="nav-btn cta-btn">Shop Now</button></a>
+    <button class="nav-btn" id="login-trigger">Login / Sign Up</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/menu.svg" class="icon-svg" alt="Menu" />
+    </button>
+  </nav>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+    <a href="#shop-section">Shop Now</a>
+    <a href="#" id="mobile-login">Login / Sign Up</a>
+  </div>
+</header>
+
+<!-- ======== HERO SECTION ======== -->
+<main class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">
+      <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/leaf.svg" class="icon-svg icon-cream" alt="Organic" />
+      100% Organic
+    </span>
+    <h2 class="hero-title animate-fade-up delay-1">
+      Healthy habits begin<br/><em>with fresh fruits.</em>
+    </h2>
+    <p class="hero-sub animate-fade-up delay-2">Handpicked daily. Delivered fresh. From our branch to your table.</p>
+    <div class="hero-btns animate-fade-up delay-3">
+      <a href="#shop-section"><button class="btn-primary">Shop Now</button></a>
+      <a href="#categories"><button class="btn-outline">Explore</button></a>
+    </div>
+  </div>
+  <div class="hero-floating">
+    <div class="float-card fc1">
+      <img src="apple.jpeg" class="fruit-img" alt="Apple" />
+      Apples
+    </div>
+    <div class="float-card fc2">
+      <img src="citrus.webp" class="fruit-img" alt="Citrus" />
+      Citrus
+    </div>
+    <div class="float-card fc3">
+      <img src="berries.jpeg" class="fruit-img" alt="Berries" />
+      Berries
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</main>
+
+<!-- ======== FEATURES STRIP ======== -->
+<section class="features-strip">
+  <div class="feature-item">
+    <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/truck.svg" class="icon-svg icon-cream" alt="Delivery" />
+    <p>Free Delivery over Rs.499</p>
+  </div>
+  <div class="feature-item">
+    <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/leaf.svg" class="icon-svg icon-cream" alt="Organic" />
+    <p>100% Organic</p>
+  </div>
+  <div class="feature-item">
+    <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/star.svg" class="icon-svg icon-cream" alt="Rating" />
+    <p>4.9 Star Rated</p>
+  </div>
+  <div class="feature-item">
+    <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/refresh-ccw.svg" class="icon-svg icon-cream" alt="Returns" />
+    <p>Easy Returns</p>
+  </div>
+</section>
+
+<!-- ======== CATEGORIES ======== -->
+<section class="section categories" id="categories">
+  <div class="section-header">
+    <h2 class="section-title">Our Categories</h2>
+    <p class="section-sub">Fresh picks, straight from nature</p>
+  </div>
+  <div class="categories-grid">
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="apple.jpeg" class="fruit-img-lg" alt="Apple" /></div>
+      <h3>Apples &amp; Pears</h3>
+      <p>Crunchy, crisp varieties</p>
+      <span class="cat-price">From Rs.200/kg</span>
+    </div>
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="citrus.webp" class="fruit-img-lg" alt="Orange" /></div>
+      <h3>Citrus Fruits</h3>
+      <p>Tangy, vitamin-packed</p>
+      <span class="cat-price">From Rs.80/kg</span>
+    </div>
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="berries.jpeg" class="fruit-img-lg" alt="Grapes" /></div>
+      <h3>Grapes &amp; Berries</h3>
+      <p>Sweet, antioxidant-rich</p>
+      <span class="cat-price">From Rs.60/kg</span>
+    </div>
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="tropical.jpeg" class="fruit-img-lg" alt="Mango" /></div>
+      <h3>Tropical Fruits</h3>
+      <p>Exotic, sun-ripened</p>
+      <span class="cat-price">From Rs.140/kg</span>
+    </div>
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="strawberry.jpeg" class="fruit-img-lg" alt="Strawberry" /></div>
+      <h3>Strawberries</h3>
+      <p>Fresh, locally grown</p>
+      <span class="cat-price">From Rs.150/kg</span>
+    </div>
+    <div class="cat-card" data-animate>
+      <div class="cat-icon"><img src="banana.jpeg" class="fruit-img-lg" alt="Banana" /></div>
+      <h3>Bananas</h3>
+      <p>Energy-boosting, organic</p>
+      <span class="cat-price">From Rs.60/kg</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======== GALLERY ======== -->
+<section class="section gallery-section" id="gallery">
+  <div class="section-header">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-sub">Beauty in every bite</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item g1" data-animate><div class="gallery-label">Mangoes</div></div>
+    <div class="gallery-item g2" data-animate><div class="gallery-label">Berries Mix</div></div>
+    <div class="gallery-item g3" data-animate><div class="gallery-label">Citrus</div></div>
+    <div class="gallery-item g4" data-animate><div class="gallery-label">Tropical</div></div>
+    <div class="gallery-item g5" data-animate><div class="gallery-label">Apples</div></div>
+    <div class="gallery-item g6" data-animate><div class="gallery-label">Fresh Picks</div></div>
+  </div>
+</section>
+
+<!-- ======== ABOUT ======== -->
+<section class="section about-section" id="about">
+  <div class="about-content">
+    <div class="about-text" data-animate>
+      <span class="pill">Our Story</span>
+      <h2>From Branch to Table,<br/>with Love</h2>
+      <p>Founded in 2020, From Branch began as a small family farm in the Western Ghats. Today, we partner with over 200 organic farmers to bring you the freshest seasonal fruits — no preservatives, no middlemen, just nature's best.</p>
+      <ul class="about-list">
+        <li>
+          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/check-circle-2.svg" class="icon-svg icon-green" alt="Check" />
+          Directly sourced from certified organic farms
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/check-circle-2.svg" class="icon-svg icon-green" alt="Check" />
+          Delivered within 24 hours of harvesting
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/check-circle-2.svg" class="icon-svg icon-green" alt="Check" />
+          Zero-plastic, eco-friendly packaging
+        </li>
+      </ul>
+    </div>
+    <div class="about-stats" data-animate>
+      <div class="stat-card"><h3 class="counter" data-target="200">0</h3><p>Partner Farms</p></div>
+      <div class="stat-card"><h3 class="counter" data-target="15000">0</h3><p>Happy Customers</p></div>
+      <div class="stat-card"><h3 class="counter" data-target="50">0</h3><p>Fruit Varieties</p></div>
+      <div class="stat-card"><h3 class="counter" data-target="4">0</h3><p>Years of Trust</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== SHOP SECTION ======== -->
+<section class="section shop-section" id="shop-section">
+  <div class="section-header">
+    <h2 class="section-title">Today's Picks</h2>
+    <p class="section-sub">Add to your basket</p>
+  </div>
+  <div class="shop-grid">
+    <div class="shop-card" data-animate>
+      <div class="shop-emoji"><img src="apple.jpeg" class="fruit-img-xl" alt="Apple" /></div>
+      <h3>Royal Apples</h3>
+      <p>Himachali, crisp &amp; sweet</p>
+      <div class="shop-footer">
+        <span class="price">Rs.200/kg</span>
+        <button class="add-btn" onclick="addToCart('Royal Apples', 120)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="shop-card" data-animate>
+      <div class="shop-emoji"><img src="mango.jpeg" class="fruit-img-xl" alt="Mango" /></div>
+      <h3>Alphonso Mango</h3>
+      <p>Ratnagiri GI-tagged</p>
+      <div class="shop-footer">
+        <span class="price">Rs.250/kg</span>
+        <button class="add-btn" onclick="addToCart('Alphonso Mango', 250)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="shop-card" data-animate>
+      <div class="shop-emoji"><img src="black grapes.jpeg" class="fruit-img-xl" alt="Grapes" /></div>
+      <h3>Black Grapes</h3>
+      <p>Seedless, juicy</p>
+      <div class="shop-footer">
+        <span class="price">Rs.70/kg</span>
+        <button class="add-btn" onclick="addToCart('Black Grapes', 140)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="shop-card" data-animate>
+      <div class="shop-emoji"><img src="strawberry.jpeg" class="fruit-img-xl" alt="Strawberry" /></div>
+      <h3>Strawberries</h3>
+      <p>Fresh, Mahabaleshwar</p>
+      <div class="shop-footer">
+        <span class="price">Rs.180/kg</span>
+        <button class="add-btn" onclick="addToCart('Strawberries', 180)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Summary -->
+  <div class="cart-summary" id="cart-summary">
+    <h3>
+      <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/shopping-cart.svg" class="icon-svg icon-green" alt="Cart" />
+      Cart (<span id="cart-count">0</span> items)
+    </h3>
+    <ul id="cart-list"></ul>
+    <div class="cart-total">Total: Rs.<span id="cart-total">0</span></div>
+    <button class="btn-primary" onclick="checkout()">Checkout</button>
+  </div>
+</section>
+
+<!-- ======== MODAL: LOGIN / SIGNUP ======== -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+
+    <div class="modal-tabs">
+      <button class="tab-btn active" id="tab-login">Login</button>
+      <button class="tab-btn" id="tab-signup">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form class="auth-form active" id="login-form" novalidate>
+      <h2>Welcome Back
+        
+      </h2>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="login-email" placeholder="you@example.com" />
+        <span class="error-msg" id="login-email-err"></span>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="login-pass" placeholder="Enter password" />
+        <span class="error-msg" id="login-pass-err"></span>
+      </div>
+      <button type="submit" class="btn-primary full-width">Login</button>
+      <p class="form-link">Don't have an account? <a href="#" id="go-signup">Sign Up</a></p>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form class="auth-form" id="signup-form" novalidate>
+      <h2>Join From Branch
+       
+      </h2>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="reg-name" placeholder="Your name" />
+        <span class="error-msg" id="reg-name-err"></span>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="reg-email" placeholder="you@example.com" />
+        <span class="error-msg" id="reg-email-err"></span>
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" id="reg-phone" placeholder="10-digit mobile number" maxlength="10" />
+        <span class="error-msg" id="reg-phone-err"></span>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="reg-pass" placeholder="Min 8 characters" />
+        <span class="error-msg" id="reg-pass-err"></span>
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" id="reg-confirm" placeholder="Re-enter password" />
+        <span class="error-msg" id="reg-confirm-err"></span>
+      </div>
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="reg-terms" />
+        <label for="reg-terms">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+        <span class="error-msg" id="reg-terms-err"></span>
+      </div>
+      <button type="submit" class="btn-primary full-width">Create Account</button>
+      <p class="form-link">Already have an account? <a href="#" id="go-login">Login</a></p>
+    </form>
+
+  </div>
+</div>
+
+<!-- ======== TOAST ======== -->
+<div class="toast" id="toast"></div>
+
+<!-- ======== FOOTER ======== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>FROM BRANCH</h3>
+      <p>Farm fresh fruits, delivered with love.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/map-pin.svg" class="icon-svg icon-cream-sm" alt="Location" />
+        Chennai, Tamil Nadu
+      </p>
+      <p>
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/phone.svg" class="icon-svg icon-cream-sm" alt="Phone" />
+        +91 98765 43210
+      </p>
+      <p>
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.323.0/icons/mail.svg" class="icon-svg icon-cream-sm" alt="Email" />
+        hello@frombranch.in
+      </p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 From Branch. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
